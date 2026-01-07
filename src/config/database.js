@@ -1,9 +1,12 @@
 import 'dotenv/config';
-import { neon } from '@neondatabase/serverless';
-import { drizzle } from 'drizzle-orm/neon-js';
+import { Pool, neonConfig } from '@neondatabase/serverless';
+import { drizzle } from 'drizzle-orm/neon-serverless';
+import ws from 'ws';
 
-const sql = neon(process.env.DATABASE_URL);
+// This tells the Neon driver to use the 'ws' package for WebSockets in Node.js
+neonConfig.webSocketConstructor = ws;
 
-const db = drizzle(sql);
+// Use Pool instead of the neon() function
+const pool = new Pool({ connectionString: process.env.DATABASE_URL });
 
-export default {sql, db};
+export const db = drizzle(pool);
