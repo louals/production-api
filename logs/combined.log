@@ -84,3 +84,29 @@
 {"level":"info","message":"::1 - - [13/Jan/2026:19:46:31 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 230 \"-\" \"HTTPie\"","service":"production-api"}
 {"level":"info","message":"::1 - - [13/Jan/2026:20:08:46 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 229 \"-\" \"HTTPie\"","service":"production-api"}
 {"level":"info","message":"::1 - - [13/Jan/2026:20:09:02 +0000] \"POST /api/auth/sign-out HTTP/1.1\" 200 42 \"-\" \"HTTPie\"","service":"production-api"}
+{"level":"info","message":"::1 - - [13/Jan/2026:20:44:35 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"HTTPie\"","service":"production-api"}
+{"level":"info","message":"::1 - - [13/Jan/2026:20:44:37 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"HTTPie\"","service":"production-api"}
+{"level":"info","message":"::1 - - [13/Jan/2026:20:44:37 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"HTTPie\"","service":"production-api"}
+{"level":"info","message":"::1 - - [13/Jan/2026:20:44:37 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"HTTPie\"","service":"production-api"}
+{"level":"info","message":"::1 - - [13/Jan/2026:20:44:37 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"HTTPie\"","service":"production-api"}
+{"ip":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"production-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Jan/2026:20:44:38 +0000] \"GET /health HTTP/1.1\" 200 51 \"-\" \"HTTPie\"","service":"production-api"}
+{"ip":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"production-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Jan/2026:20:44:38 +0000] \"GET /health HTTP/1.1\" 200 51 \"-\" \"HTTPie\"","service":"production-api"}
+{"ip":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"production-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Jan/2026:20:44:38 +0000] \"GET /health HTTP/1.1\" 200 51 \"-\" \"HTTPie\"","service":"production-api"}
+{"ip":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"production-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Jan/2026:20:44:38 +0000] \"GET /health HTTP/1.1\" 200 51 \"-\" \"HTTPie\"","service":"production-api"}
+{"ip":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"production-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Jan/2026:20:44:38 +0000] \"GET /health HTTP/1.1\" 200 51 \"-\" \"HTTPie\"","service":"production-api"}
+{"level":"info","message":"::1 - - [13/Jan/2026:20:55:33 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"HTTPie\"","service":"production-api"}
+{"level":"info","message":"::1 - - [13/Jan/2026:20:55:34 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"HTTPie\"","service":"production-api"}
+{"level":"info","message":"::1 - - [13/Jan/2026:20:55:35 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"HTTPie\"","service":"production-api"}
+{"level":"info","message":"::1 - - [13/Jan/2026:20:55:36 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"HTTPie\"","service":"production-api"}
+{"level":"info","message":"::1 - - [13/Jan/2026:20:55:36 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"HTTPie\"","service":"production-api"}
+{"ip":"::1","level":"warn","message":"Request denied","path":"/health","reason":"RATE_LIMIT","service":"production-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Jan/2026:20:55:37 +0000] \"GET /health HTTP/1.1\" 429 96 \"-\" \"HTTPie\"","service":"production-api"}
+{"ip":"::1","level":"warn","message":"Request denied","path":"/health","reason":"RATE_LIMIT","service":"production-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Jan/2026:20:55:37 +0000] \"GET /health HTTP/1.1\" 429 96 \"-\" \"HTTPie\"","service":"production-api"}
+{"ip":"::1","level":"warn","message":"Request denied","path":"/health","reason":"RATE_LIMIT","service":"production-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Jan/2026:20:55:38 +0000] \"GET /health HTTP/1.1\" 429 96 \"-\" \"HTTPie\"","service":"production-api"}
