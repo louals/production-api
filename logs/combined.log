@@ -80,3 +80,7 @@
 {"level":"info","message":"::1 - - [07/Jan/2026:20:10:18 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 194 \"-\" \"HTTPie\"","service":"production-api"}
 {"level":"info","message":"User admin@gmail.com created successfully","service":"production-api"}
 {"level":"info","message":"::1 - - [07/Jan/2026:20:15:18 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 231 \"-\" \"HTTPie\"","service":"production-api"}
+{"level":"info","message":"User louai@gmail.com created successfully","service":"production-api"}
+{"level":"info","message":"::1 - - [13/Jan/2026:19:46:31 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 230 \"-\" \"HTTPie\"","service":"production-api"}
+{"level":"info","message":"::1 - - [13/Jan/2026:20:08:46 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 229 \"-\" \"HTTPie\"","service":"production-api"}
+{"level":"info","message":"::1 - - [13/Jan/2026:20:09:02 +0000] \"POST /api/auth/sign-out HTTP/1.1\" 200 42 \"-\" \"HTTPie\"","service":"production-api"}
