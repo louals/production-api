@@ -1,15 +1,15 @@
-import logger from "#config/logger.js";
-import bcrypt from "bcrypt";
-import { db } from "#config/database.js";
+import logger from '#config/logger.js';
+import bcrypt from 'bcrypt';
+import { db } from '#config/database.js';
 import { eq } from 'drizzle-orm';
-import { users } from "#models/user.model.js";
+import { users } from '#models/user.model.js';
 
-export const hashPassword = async (password) => {
+export const hashPassword = async password => {
   try {
     return await bcrypt.hash(password, 10);
   } catch (error) {
-    logger.error("Hash password error", error);
-    throw new Error("Failed to hash password");
+    logger.error('Hash password error', error);
+    throw new Error('Failed to hash password');
   }
 };
 
@@ -17,8 +17,8 @@ export const comparePassword = async (password, hash) => {
   try {
     return await bcrypt.compare(password, hash);
   } catch (error) {
-    logger.error("Compare password error", error);
-    throw new Error("Failed to compare password");
+    logger.error('Compare password error', error);
+    throw new Error('Failed to compare password');
   }
 };
 
@@ -74,7 +74,7 @@ export const authenticateUser = async ({ email, password }) => {
       throw new Error('Invalid email or password');
     }
 
-    const { password: _password, ...userWithoutPassword } = user;
+    const { password: _, ...userWithoutPassword } = user;
 
     return userWithoutPassword;
   } catch (e) {
